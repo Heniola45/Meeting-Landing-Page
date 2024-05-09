@@ -509,12 +509,52 @@ p {
     margin-top: -16px;
 }
 
-/* Media Query for Mobile View */
-@media (max-width: 375px) {
-    .feature-card {
-        flex: 1 1 calc(100% - 20px);
+/* For small devices (phones) */
+@media only screen and (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .logo {
+        margin-bottom: 10px;
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+
+    li {
+        float: none;
+        margin-bottom: 10px;
+    }
+
+    .button-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    .four-card {
+        justify-content: center;
+    }
+
+    .testimonialgrid {
+        padding: 20px;
+    }
+
+    .footer {
+        padding: 20px;
     }
 }
+
   
   
   
